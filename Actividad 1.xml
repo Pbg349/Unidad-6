@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCKTYPE mensajes [
+
+    <!ELEMENT mensajes (de | para | asunto | contenido)*>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT contenido (#PCDATA)>
+]
+<mensajes>
+    <de>Paco.garcia@gmail.com</de>
+    <para>Paco.hernandez@gmail.com</para>
+    <asunto>HolaMundo</asunto>
+    <contenido>Holaaaaaaaaaaaa</contenido>
+</mensajes>
+
+2:
+
+<!DOCKTYPE etiqueta [
+    <!ELEMENT etiqueta (nombre | calle | ciudad | pais | codigo | matriculado)*>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT matriculado EMPTY>
+] 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<etiqueta>
+    <nombre>Roberto García</nombre>
+    <calle>c/ Mayor, 27</calle>
+    <ciudad>Coslada</ciudad>
+    <pais>España</pais>
+    <codigo>39343</codigo>
+    <matriculado/>
+</etiqueta>
+
+3:
+
+<!DOCKTYPE automovil [
+    <!ELEMENT automovil (datos | especificaciones)*>
+    <!ELEMENT datos (marca | modelo | anyo)*>
+        <!ELEMENT marca (#PCDATA)>
+        <!ELEMENT modelo (#PCDATA)>
+        <!ELEMENT anyo (#PCDATA)>
+    <!ELEMENT especificaciones (longitud | traccion-delantera | motor)*>
+        <!ELEMENT longitud (#PCDATA)>
+        <!ELEMENT traccion-delantera EMPTY>
+        <!ELEMENT motor (cilindros | cc | cv)>
+            <!ELEMENT cilindros (#PCDATA)>
+            <!ELEMENT cc (#PCDATA)>
+            <!ELEMENT cv (#PCDATA)>
+] 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<automovil>
+    <datos>
+        <marca>Volkswagen</marca>
+        <modelo>Corrado</marca>
+        <anyo>1989</anyo>
+    </datos>
+    <especificaciones>
+        <longitud>4,05</longitud>
+        <traccion-delantera/>
+        <motor>
+            <cilindros>6</cilindros>
+            <cc>3000</cc>
+            <cv>190</cv>
+        </motor>
+    </especificaciones>
+</automovil>

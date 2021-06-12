@@ -1,0 +1,6 @@
+<!DOCKTYPE discos[
+<!ELEMENT discos (titulo | artista | album)+>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT artista (#PCDATA)>
+    <!ELEMENT album (#PCDATA)>
+]
